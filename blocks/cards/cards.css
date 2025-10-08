@@ -1,3 +1,12 @@
+.cards>ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+  grid-gap: 24px;
+}
+
 .cards>ul>li {
   border: 1px solid #dadada;
   background-color: var(--background-color);
@@ -6,23 +15,51 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
+/* Card hover effect */
 .cards>ul>li:hover {
   transform: translateY(-6px) scale(1.02);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   background-color: #f5f5f5;
-  /* subtle highlight on hover */
+  /* subtle background change on hover */
 }
 
-.cards a {
-  color: #021b30;
+/* Card body spacing */
+.cards .cards-card-body {
+  margin: 16px;
+}
+
+/* Card image */
+.cards .cards-card-image {
+  line-height: 0;
+}
+
+.cards>ul>li img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  transition: transform 0.3s ease;
+}
+
+/* Image zoom on card hover */
+.cards>ul>li:hover img {
+  transform: scale(1.05);
+}
+
+/* Heading link default style */
+.cards .cards-card-body h2 a {
+  color: #0078d7;
   /* normal link color */
   text-decoration: none;
+  /* removes underline */
   transition: color 0.3s ease;
 }
 
-.cards>ul>li:hover a {
-  color: #021b30;
-  /* link color changes when card is hovered */
+/* Heading link color on card hover */
+.cards>ul>li:hover .cards-card-body h2 a {
+  color: #0056a3;
+  /* changes color when card is hovered */
 }
 
 
