@@ -1,3 +1,4 @@
+/* Card Grid */
 .cards>ul {
   list-style: none;
   margin: 0;
@@ -7,6 +8,7 @@
   grid-gap: 24px;
 }
 
+/* Individual Card */
 .cards>ul>li {
   border: 1px solid #dadada;
   background-color: var(--background-color);
@@ -15,7 +17,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
-/* Card hover effect */
+/* Card Hover Effect */
 .cards>ul>li:hover {
   transform: translateY(-6px) scale(1.02);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
@@ -23,16 +25,17 @@
   /* subtle background change on hover */
 }
 
-/* Card body spacing */
+/* Card Body */
 .cards .cards-card-body {
   margin: 16px;
 }
 
-/* Card image */
+/* Card Image Container */
 .cards .cards-card-image {
   line-height: 0;
 }
 
+/* Card Image */
 .cards>ul>li img {
   width: 100%;
   aspect-ratio: 4 / 3;
@@ -42,24 +45,63 @@
   transition: transform 0.3s ease;
 }
 
-/* Image zoom on card hover */
+/* Image Zoom on Hover */
 .cards>ul>li:hover img {
   transform: scale(1.05);
 }
 
-/* Heading link default style (black) */
+/* Heading Links Default Style (Black) */
 .cards .cards-card-body h2 a {
   color: #000000;
-  /* black color */
+  /* black */
   text-decoration: none;
   /* removes underline */
   transition: color 0.3s ease;
 }
 
-/* Heading link hover color */
+/* Heading Link Hover Color (Optional Teal) */
 .cards>ul>li:hover .cards-card-body h2 a {
   color: #0fb7a9;
-  /* optional: teal color on hover */
+  /* teal on hover */
+}
+
+/* Optional: Force headings to stay black even if hovered */
+.cards .cards-card-body h2 a:hover {
+  color: #000000;
+  /* stays black on hover */
+}
+
+/* Global Headings (Optional) */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000000;
+  /* ensures all headings are black */
+}
+
+/* Heading Links Globally (Optional) */
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+  color: #000000;
+  /* stays black on hover */
 }
 
 
