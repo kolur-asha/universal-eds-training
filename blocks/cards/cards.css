@@ -47,19 +47,19 @@
   transform: scale(1.05);
 }
 
-/* Heading link default style */
+/* Heading link default style (black) */
 .cards .cards-card-body h2 a {
-  color: #00080f;
-  /* normal link color */
+  color: #000000;
+  /* black color */
   text-decoration: none;
   /* removes underline */
   transition: color 0.3s ease;
 }
 
-/* Heading link color on card hover */
+/* Heading link hover color */
 .cards>ul>li:hover .cards-card-body h2 a {
   color: #0fb7a9;
-  /* changes color when card is hovered */
+  /* optional: teal color on hover */
 }
 
 
