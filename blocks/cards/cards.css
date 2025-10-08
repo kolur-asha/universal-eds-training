@@ -49,7 +49,7 @@
 
 /* Heading link default style */
 .cards .cards-card-body h2 a {
-  color: #0078d7;
+  color: #053155;
   /* normal link color */
   text-decoration: none;
   /* removes underline */
@@ -58,7 +58,7 @@
 
 /* Heading link color on card hover */
 .cards>ul>li:hover .cards-card-body h2 a {
-  color: #0056a3;
+  color: #0fb7a9;
   /* changes color when card is hovered */
 }
 
